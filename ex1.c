@@ -1,18 +1,19 @@
 //Experimenting the Mathematical Functions
-    /*This example calculates the absolute value of an integer x and assigns it to y. (clone of https://www.ibm.com/docs/da/i/7.4?topic=functions-abs-calculate-integer-absolute-value#absolut__title__7)*/
+    /*This example calculates y as the absolute value of x:*/
 
-
-#include <stdlib.h>
+#include <math.h>
 #include <stdio.h>
 
 int main(void) 
 {
-        int x = -4, y;
-        y = abs(x);
+       double x, y;
 
-        printf("The absolute value of x is %d.\n", y); //I could change the format specifiers "%d to %i", they're the same
+       x = -2.718281;
+       y = fabs(x);
 
-    /********************* Output **************************
-            The absolute value of x is 4.
-    *****************************************************/
+       printf("fabs (%lf) = %lf\n", x, y);  
 }
+
+/*******************  Output should be similar to:  ***************
+                      fabs( -2.7181281 ) = 2.718281
+*******************************************************************/
