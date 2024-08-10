@@ -9,6 +9,6 @@ int main (void) {
         keep_going =false;      // Could be 0
     }
     printf("Stopping!\n");
-    return EXIT_SUCCESS;
+    return EXIT_FAILURE;    //Output 1
 
 }
